@@ -1,0 +1,17 @@
+
+language: java
+
+jdk:
+  - oraclejdk8
+  
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - alfonso.ayuso.guzman@alumnos.upm.es
+      
+script: mvn verify
