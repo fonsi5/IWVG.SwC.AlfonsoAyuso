@@ -41,5 +41,11 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(5,fr.decimal(),10e-5);
     }
+    
+    @Test
+    public void testIsEquivalente() {
+        assertTrue(fr.isEquivalente(5, 1));
+        assertFalse(fr.isEquivalente(3, 5));
+    }
 
 }
