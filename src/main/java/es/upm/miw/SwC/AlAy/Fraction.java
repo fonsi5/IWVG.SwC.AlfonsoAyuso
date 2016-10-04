@@ -64,4 +64,10 @@ public class Fraction {
         return this.numerator*denominator == this.denominator*numerator;
     }
     
+    public double sum(int numerator, int denominator){
+        this.numerator= (this.numerator*denominator)+ (this.denominator*numerator);
+        this.denominator=this.denominator*denominator;
+        return (double) this.numerator / this.denominator;
+    }
+    
 }

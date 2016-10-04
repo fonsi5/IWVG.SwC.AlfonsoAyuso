@@ -48,4 +48,10 @@ public class FractionTest {
         assertFalse(fr.isEquivalente(3, 5));
     }
 
+    @Test
+    public void testSum() {
+        Fraction fraction= new Fraction(1,2);
+        assertEquals(1.25, fraction.sum(3, 4),10e-5);
+        
+    }
 }
