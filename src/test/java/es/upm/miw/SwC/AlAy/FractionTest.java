@@ -54,4 +54,13 @@ public class FractionTest {
         assertEquals(1.25, fraction.sum(3, 4),10e-5);
         
     }
+    
+	@Test
+	public void testIsPropia() {
+		f = new Fraction(1, 4);
+		assertTrue(f.isPropia());
+		
+		f = new Fraction(4, 3);
+		assertFalse(f.isPropia());
+	}
 }
