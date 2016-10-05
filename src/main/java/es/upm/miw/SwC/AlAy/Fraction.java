@@ -70,4 +70,11 @@ public class Fraction {
         return (double) this.numerator / this.denominator;
     }
     
+    public boolean isPropia(){
+    	if(this.numerator<this.denominator){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
 }
