@@ -57,7 +57,8 @@ public class FractionTest {
     
 	@Test
 	public void testIsPropia() {
-		f = new Fraction(1, 4);
+		Fraction f;
+	    f = new Fraction(1, 4);
 		assertTrue(f.isPropia());
 		
 		f = new Fraction(4, 3);
